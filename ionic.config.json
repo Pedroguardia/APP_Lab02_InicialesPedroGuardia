@@ -1,0 +1,7 @@
+{
+  "name": "APP_Lab02_Iniciales-Pedro-Guardia",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
