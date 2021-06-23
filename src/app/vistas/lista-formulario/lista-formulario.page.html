@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="Resgistro-formulario" text="Volver"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{Formulario}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button routerLink="/inicio">Ir a {{Boton_inicio}}</ion-button>
+<ion-button routerLink="/resgistro-formulario">Resgistro-formulario</ion-button>
+
+<ion-list>
+  <ion-item  *ngFor = "Let componenteof componente" routerLink ="componente.direccion"> 
+   
+    <ion-icon  [name]="componente.icono"></ion-icon>
+    {{componente.resgistro-formulario}}
+
+  </ion-item>
+</ion-list>
+</ion-content>
